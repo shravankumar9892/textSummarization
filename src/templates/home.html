@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  	<meta charset="UTF-8">
+  	<title>FREE Text Summarizer</title>
+  	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/normalize.min.css')}}">
+  	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+  	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/splitting.css')}}">
+  	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+  	<div class="mario-title" data-splitting>TEXT Summarization</div>
+  	<div style="margin-top: 70px; display: flex; justify-content: flex-end;">
+  		<button onclick="location.href = 'http://127.0.0.1:5000/Trynow';" type="button" class="btn btn-success" id="addRecord">Try now</button>
+  	</div>
+	<!-- Compared to https://youtu.be/0ns4KQfuJXU?t=354 -->
+	<script type="text/javascript" src="{{url_for('static', filename='js/splitting.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/index.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/5eb6d4e9bfd78e3911ed9d0d0.js')}}"></script>
+</body>
+
+</html>

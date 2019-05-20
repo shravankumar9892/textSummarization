@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		FREE Summarize text
+	</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+	<style type="text/css">
+		@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+		html, body {
+			font-family: 'Open Sans', Helvetica, sans-serif;
+  			background: #DD2911;
+  			color: #FFF;
+				}
+	</style>
+</head>
+<body>
+	<div align="center">
+		<p style="font-size: 40px;margin-top: 80px;">⬇️ Enter your TEXT here ⬇️</p>
+		<form action="{{url_for('result')}}" method="POST">
+			<ul style="list-style: none;">
+				<li>
+					<textarea rows="10" cols="50" name="text"></textarea>
+				</li>
+				<li>
+					<label for="n">How long should your summary be?</label>
+					<input type="text" name="number" id="n">
+				</li>
+				<li>
+					    <input type="submit" value="Summarize">
+				</li>
+			</ul>
+		</form>
+	</div>	
+	
+</body>
+</html>
